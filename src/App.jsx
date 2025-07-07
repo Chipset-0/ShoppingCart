@@ -14,12 +14,23 @@ function App() {
       try {
         setLoading(true);
         const fetchedItems = await getAllItems()
+      
+        console.log("getAllItems() returned:", fetchedItems);
+        console.log("Type of fetchedItems:", typeof fetchedItems);
+        console.log("Is array?", Array.isArray(fetchedItems));
+        console.log("Length:", fetchedItems?.length);
         setItems(fetchedItems);
+        console.log("Called setItems with:", fetchedItems);
       } catch (err) {
         setError(err.message)
       } finally {
         setLoading(false);
       }
+
+      setTimeout(() => {
+          console.log("Items state 100ms later:", items);
+      }, 100);
+
     };
 
     fetchItems();

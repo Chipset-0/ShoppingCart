@@ -1,11 +1,10 @@
-export default function ItemFactory(name, category, cost, 
-                                    description, imageUrl, quantity) {
+export default function ItemFactory(name, category, cost, description, imageUrl, quantity) {
     return {
-        name: name,
-        category: category,
-        cost: cost,
-        description: description,
-        imageUrl: imageUrl,
-        quantity: quantity
+        name,
+        category,
+        cost,
+        description,
+        imageUrl,
+        quantity
     };
 }

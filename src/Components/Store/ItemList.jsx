@@ -8,7 +8,6 @@ export default function ItemList({itemList, updateItemList})
         updateItemList(newList)
     }
 
-    console.log(itemList)
 
     return (
         <div>
@@ -16,8 +15,8 @@ export default function ItemList({itemList, updateItemList})
                 Test Text
             </div>
             <>
-                {itemList.map((itemList, i) => (
-                    <StoreCard key={i} item={itemList[i]} changeItem={updateItem} />
+                {itemList.map((item, i) => (
+                    <StoreCard key={i} item={item} changeItem={updateItem} />
                 ))}
             </>
         </div>
