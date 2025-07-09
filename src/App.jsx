@@ -42,6 +42,7 @@ function App() {
 
   return (
     <>
+      <link href="https://fonts.cdnfonts.com/css/orange-kid" rel="stylesheet"></link>
       <ItemList itemList={items} updateItemList={setItems}/>
     </>
   )

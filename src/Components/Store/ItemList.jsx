@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import StoreCard from "./StoreCard";
+import './ItemList.css'
 
 export default function ItemList({itemList, updateItemList})
 {
@@ -11,14 +12,11 @@ export default function ItemList({itemList, updateItemList})
 
     return (
         <div>
-            <div>
-                Test Text
-            </div>
-            <>
+            <div className="item-list-grid">
                 {itemList.map((item, i) => (
-                    <StoreCard key={i} item={item} changeItem={updateItem} />
+                    <StoreCard key={i} item={item} changeItem={updateItem} index={i}/>
                 ))}
-            </>
+            </div>
         </div>
     )
 }
