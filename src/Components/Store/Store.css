@@ -1,0 +1,14 @@
+.store-container
+{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    height: 100%;
+}
+
+.item-list-holder
+{
+    display: grid;
+    place-items: center;
+    padding:5%;
+    padding-bottom: 0;
+}

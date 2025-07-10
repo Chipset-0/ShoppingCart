@@ -1,0 +1,20 @@
+.sidebar-container
+{
+    display: flex;
+    margin-left: 0;
+    margin-right: auto;
+    background-color: white;
+    min-width: 200px;
+    border-right: 8px solid grey;
+    justify-content: center;
+    padding-top:25%;
+
+    font-size: x-large;
+    height: inherit;
+}
+
+.vertical-form
+{
+    display: flex;
+    flex-direction: column;
+}

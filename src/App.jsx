@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import ItemList from './Components/Store/ItemList'
 import getAllItems from './Fetching/Fetcher.js'
+import Store from './Components/Store/Store.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -43,7 +43,7 @@ function App() {
   return (
     <>
       <link href="https://fonts.cdnfonts.com/css/orange-kid" rel="stylesheet"></link>
-      <ItemList itemList={items} updateItemList={setItems} filters={[]}/>
+      <Store itemList={items} updateItemList={setItems}/>
     </>
   )
 }

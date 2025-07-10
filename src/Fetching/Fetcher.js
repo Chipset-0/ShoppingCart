@@ -1,5 +1,5 @@
 const shopItems = {
-  balls: [
+  ball: [
     "poke-ball",
     "great-ball",
     "ultra-ball",
@@ -13,14 +13,14 @@ const shopItems = {
     "dusk-ball",
     "timer-ball"
   ],
-  potions: [
+  potion: [
     "potion",
     "super-potion",
     "hyper-potion",
     "max-potion",
     "full-restore"
   ],
-  statusMedicine: [
+  status: [
     "antidote",
     "burn-heal",
     "ice-heal",
@@ -29,7 +29,7 @@ const shopItems = {
     "full-heal",
     "revive"
   ],
-  items: [
+  item: [
     "poke-doll",
     "repel",
     "super-repel",
