@@ -1,0 +1,21 @@
+.navigation-bar
+{
+    width: 100vw;
+    height:10vh;
+    background-color: lightblue;
+    display: flex;
+    padding: 0px 2vw;
+    align-content: center;
+}
+
+.nav-options
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1vw;
+    font-size: xx-large;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    margin-left: 5vw;
+}

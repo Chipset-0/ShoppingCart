@@ -1,7 +1,11 @@
-import { useEffect, useState } from 'react'
+import { StrictMode, useEffect, useState, useMemo} from 'react'
 import './App.css'
 import getAllItems from './Fetching/Fetcher.js'
 import Store from './Components/Store/Store.jsx'
+import { RouterProvider } from 'react-router-dom'
+import routerFactory from "./Routing/Router.jsx"
+import Navbar from './Components/NavBar/Navbar.jsx'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -9,18 +13,15 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null)
 
+  const router = useMemo(() => routerFactory({itemList: items, setItemList: setItems}))
+
   useEffect(() => {
     const fetchItems = async () => {
       try {
         setLoading(true);
         const fetchedItems = await getAllItems()
       
-        console.log("getAllItems() returned:", fetchedItems);
-        console.log("Type of fetchedItems:", typeof fetchedItems);
-        console.log("Is array?", Array.isArray(fetchedItems));
-        console.log("Length:", fetchedItems?.length);
         setItems(fetchedItems);
-        console.log("Called setItems with:", fetchedItems);
       } catch (err) {
         setError(err.message)
       } finally {
@@ -43,7 +44,11 @@ function App() {
   return (
     <>
       <link href="https://fonts.cdnfonts.com/css/orange-kid" rel="stylesheet"></link>
-      <Store itemList={items} updateItemList={setItems}/>
+      <StrictMode>
+        <RouterProvider router={router}>
+          <Navbar />
+        </RouterProvider>
+      </StrictMode>
     </>
   )
 }
