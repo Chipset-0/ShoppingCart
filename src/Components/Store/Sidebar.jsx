@@ -34,7 +34,7 @@ export default function Sidebar({filters, setFilters})
                 </div>
 
                 <div>
-                    <input type="checkbox" id="item-check" name="item-check" value="item" onChange={() => {toggleFilter("ball")}}/>
+                    <input type="checkbox" id="item-check" name="item-check" value="item" onChange={() => {toggleFilter("item")}}/>
                     <label htmlFor="item-check">Items</label>
                 </div>
             </form>

@@ -1,0 +1,7 @@
+.home-page
+{
+    display: grid;
+    place-items: center;
+    margin-bottom: 0;
+    height: 80vh;
+}

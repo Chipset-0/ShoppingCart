@@ -1,0 +1,15 @@
+
+.cart-page
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5vh 5vw;
+}
+
+.item-summary
+{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 8px;
+}

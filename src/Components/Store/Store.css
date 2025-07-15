@@ -1,8 +1,9 @@
 .store-container
 {
     display: grid;
-    grid-template-columns: 1fr 10fr;
-    height: 100%;
+    grid-template-columns: 1fr 10fr;  
+    min-height: 80vh;
+    height: fit-content;
 }
 
 .item-list-holder

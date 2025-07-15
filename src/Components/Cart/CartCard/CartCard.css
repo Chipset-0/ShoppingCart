@@ -1,0 +1,22 @@
+.cart-card
+{
+    display: grid;
+    grid-template-columns: 64px 4fr 1fr 2fr 1fr;
+    align-items: center;
+    background-color: white;
+    padding: 1vh 1vw;
+    border-radius: 8px;
+    border: solid transparent 4px
+}
+
+.cart-card:hover
+{
+    border: solid rgb(255, 25, 25) 4px
+}
+
+.image-small
+{
+    aspect-ratio: 1 / 1;
+    height: 64px;
+    width: 64px;
+}

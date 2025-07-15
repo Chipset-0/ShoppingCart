@@ -19,3 +19,16 @@
     align-content: center;
     margin-left: 5vw;
 }
+
+.cart-option
+{
+    justify-self: flex-end;
+    display: grid;
+    place-items: center;
+    margin-right:5vw;
+    margin-left:auto;
+}
+.cart-button
+{
+    height:10vh;
+}

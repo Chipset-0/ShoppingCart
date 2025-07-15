@@ -61,9 +61,9 @@ async function getItem(name, category) {
         }
         
         const data = await response.json();
-        
         // Create and return the item object
         const item = {
+            id: data.id,
             name: Capitalise(data.name),
             description: data.flavor_text_entries[0].text.replace(/(\r\n|\n|\r)/gm, " "),
             cost: data.cost,

@@ -46,7 +46,6 @@ function App() {
       <link href="https://fonts.cdnfonts.com/css/orange-kid" rel="stylesheet"></link>
       <StrictMode>
         <RouterProvider router={router}>
-          <Navbar />
         </RouterProvider>
       </StrictMode>
     </>
