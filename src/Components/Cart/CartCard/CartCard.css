@@ -20,3 +20,54 @@
     height: 64px;
     width: 64px;
 }
+
+.cart-quantity
+{
+    place-items: center;
+    place-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.button-card-small
+{
+    background: transparent;
+    padding: 8px;
+    margin: 0px;
+    width: fit-content;
+    font-size: x-large;
+    height: fit-content;
+    
+}
+
+.card-quantity-amount
+{
+    font-size: xx-large;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    width: 60px;
+}
+
+
+.cart-card .quantity-button
+{
+    border: solid transparent 1px
+}
+
+.cart-card .quantity-button:hover
+{
+    border: solid rgb(255, 25, 25) 1px
+}
+
+.cart-card .delete-button
+{
+    font-size: xx-large;
+    border: none;
+}
+
+.cart-card .delete-button:hover
+{
+    color:rgb(255, 25, 25);
+    border: none;
+}

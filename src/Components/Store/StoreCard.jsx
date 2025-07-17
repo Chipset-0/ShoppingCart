@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import "./StoreCard.css"
-
-const MAX_ITEM_QUANTITY = 999;
+import { MAX_ITEM_QUANTITY } from "../../values";
 
 export default function StoreCard({item, changeItem, index})
 {
