@@ -7,6 +7,7 @@ import Cart from "../Components/Cart/Cart";
 import Navbar from "../Components/NavBar/Navbar";
 import Footer from "../Components/Footer/Footer";
 import './Router.css'
+import ItemMaximised from "../Components/Item/ItemMaximised";
 
 export default function routerFactory({itemList, setItemList})
 {
@@ -26,6 +27,17 @@ export default function routerFactory({itemList, setItemList})
             <div className="store-layout">
                 <Navbar />
                 <Store itemList={itemList} updateItemList={setItemList} />
+                <Footer />
+            </div>
+        )
+    },
+    {
+        path: "/store/:id", 
+        element: 
+        (
+            <div className="store-layout">
+                <Navbar />
+                <ItemMaximised itemList={itemList} setItemList={setItemList}/>
                 <Footer />
             </div>
         )

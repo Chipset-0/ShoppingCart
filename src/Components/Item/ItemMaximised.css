@@ -1,0 +1,77 @@
+.item-maximised
+{
+    align-self: center ;
+    height: 80vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+
+.back-button
+{
+    position: absolute;
+    left: 30%;
+    top: 20%;
+    font-size: xx-large;
+    background: white;
+    padding: 8px 16px;
+    border: 2px solid black;
+    color: black;
+    border-radius: 8px;
+}
+
+.item-container
+{
+    padding: 2vw 2vh;
+    height: fit-content;
+    width: fit-content;
+    background: white;
+    border: solid black 2px;
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+}
+
+.item-image
+{
+    scale: 2;
+    width: 32px;
+    height: 32px;
+    padding: 16px;
+}
+
+.item-description
+{
+    font-size: large;
+    text-align: center;
+    padding: 1vh;
+}
+
+.small-horizontal
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
+    font-size: x-large;
+    width: 100%;
+    text-align: center;
+    margin: 0px 16px;
+}
+
+.item-quantity
+{
+    display: grid;
+    grid-template-columns: 60px 60px 60px;
+    width: inherit;
+    justify-content: center;
+}
+
+.item-quantity input
+{
+    font-family: 'Orange Kid', sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    height:100%;
+    background-color: transparent;
+    border:none;
+}

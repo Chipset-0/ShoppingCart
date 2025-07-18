@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./StoreCard.css"
+import { Link } from "react-router-dom";
 import { MAX_ITEM_QUANTITY } from "../../values";
 
 export default function StoreCard({item, changeItem, index})
@@ -81,10 +82,16 @@ export default function StoreCard({item, changeItem, index})
         handleSubmit(inputValue);
     }
 
+
+    const handleImageClick = (e) => {
+
+    }
     return (
         <div className="card-container">
             <div className="image-container">
-                <img src={item.imageUrl} alt={item.name}></img>
+                <Link to={`/store/${item.id}`}>
+                    <img src={item.imageUrl} alt={item.name} onClick={handleImageClick}></img>
+                </Link>
             </div>
             <div className="card">
                 <div>{item.name}</div>

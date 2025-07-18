@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import StoreCard from "./StoreCard";
+import StoreCard from "../StoreCard.jsx";
 import './ItemList.css'
 
 export default function ItemList({itemList, updateItemList, filters})

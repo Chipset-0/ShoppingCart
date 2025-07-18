@@ -14,10 +14,11 @@ export default function Cart({itemList, setItemList})
     const cartItems = cartIdxs.map(index => itemList[index]);
 
     const [totalCost, setTotalCost] = useState(0);
-    var itemCount = 0;
+    const [itemCount, setItemCount] = useState(0);
 
     useEffect(() => {
         setTotalCost(cartItems.reduce((sum, item) => sum + (item.cost * item.quantity), 0));
+        setItemCount(cartItems.reduce((sum, item) => sum += (item.quantity), 0))
     }, [itemList])
 
     const decrementCount = (itemId) => {
@@ -28,6 +29,7 @@ export default function Cart({itemList, setItemList})
         return item;
         }))
     }
+    
     const incrementCount = (itemId) => {
         setItemList(itemList.map((item) => {
             if (item.id === itemId) {
@@ -54,7 +56,6 @@ export default function Cart({itemList, setItemList})
         }))
     }
 
-    console.log(itemList)
     return (
         <div className="cart-page">
             {cartItems.length !== 0 && <div className="item-summary">
@@ -65,7 +66,17 @@ export default function Cart({itemList, setItemList})
                 ))}
             </div>}
             <div className="cost-summary">
-                {totalCost}
+                <div className="cost-summary-count">
+                    <h2>{"Quantity"}</h2>
+                    <h2>{itemCount}</h2>
+                </div>
+                <div className="cost-summary-tax">
+                    <h2>{"PST (10%)"}</h2>
+                    <h2>₽{totalCost * 0.10}</h2>
+                </div>
+                <div className="cost-summary-total">
+                    <h1>₽{Math.floor(totalCost*1.10)}</h1>
+                </div>
             </div>
         </div>
     )
