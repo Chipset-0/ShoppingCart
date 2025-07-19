@@ -75,6 +75,7 @@ export default function Cart({itemList, setItemList})
                     <h2>₽{totalCost * 0.10}</h2>
                 </div>
                 <div className="cost-summary-total">
+                    <h1>Total: </h1>
                     <h1>₽{Math.floor(totalCost*1.10)}</h1>
                 </div>
             </div>

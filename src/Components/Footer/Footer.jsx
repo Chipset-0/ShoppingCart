@@ -5,7 +5,7 @@ export default function Footer()
 {
     return (
         <div className="footer">
-            Placeholder
+            <h4>All Pokémon images and sprites are © Nintendo, Game Freak, Creatures Inc</h4>
         </div>
     )
 }

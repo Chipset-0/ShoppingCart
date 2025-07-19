@@ -4,6 +4,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 5vh 5vw;
+    height: 70vh;
+    justify-content: center;
+    place-items: center;
 }
 
 .item-summary
@@ -17,8 +20,21 @@
 
 .cost-summary
 {
-    padding: 5vw;
+    padding: 10vh 3vw;
     display: grid;
-    place-items: center;
     grid-column: 2 / 3;
+    background-color: white;
+    justify-self: center;
+    align-self: center;
+    border: 4px solid black;
+    border-radius: 8px;
+    gap:1vh;
+    width: 18vw;
+    height: 400px;
+}
+
+.cost-summary div
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }

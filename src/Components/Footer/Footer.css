@@ -10,4 +10,11 @@
     margin-bottom: 0px;
     margin-top: auto;
     justify-self: flex-end;
+    
+    display: grid;
+    gap:8px
+}
+
+.footer h4{
+    margin: 0px;
 }
