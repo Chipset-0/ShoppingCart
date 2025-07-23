@@ -6,7 +6,6 @@ import ItemList from "./ItemList/ItemList.jsx";
 export default function Store({itemList, updateItemList})
 {
     const [filters, setFilters] = useState([])
-    //TODO Move itemlist update functionality to here, add sidebar and itemlist
     return (
         <div className="store-container">
             <Sidebar filters={filters} setFilters={setFilters}></Sidebar>

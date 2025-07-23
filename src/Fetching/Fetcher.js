@@ -75,7 +75,7 @@ async function getItem(name, category) {
         return item;
     } catch (error) {
         console.error("Error fetching item:", error);
-        return null; // Return null on error
+        return null; 
     }
 }
 
